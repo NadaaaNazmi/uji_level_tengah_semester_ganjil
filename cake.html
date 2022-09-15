@@ -3,71 +3,12 @@
 
 <head>
     <!-- untuk judul di tab pada browser -->
-    <title>Instagram Profile Tugas Ardian</title>
+    <title>Cake</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="assets/fontawesome/fontawesome/css/all.min.css" rel="stylesheet">
 
 </head>
 <style>
-    body {
-    font-family: 'Segoe UI';            /* font yang digunakan */
-    font-size: 26px;                    /* ukuran font */
-    color: black;                     /* warna font */
-    margin: 0;                          /* nol margin agar tidak ada gap antara body dan isinya */
-}
-
-
-main {
-    background-color: #fafafa;         /* background untuk content / main */
-    margin-top: 10px;
-    /* padding: 60px 290px 0px 290px; */
-}
-
-
-/* styling  bagian header*/
-header {
-    background-color: #FFFFFF;
-    align-items: center;                 /* membuat posisi elemen di tengah  */
-    display: grid;                       /* display grid aja ga ada penjelasannya */
-    grid-template-columns: 1fr 1fr 1fr;  /* membuat border untuk batas header dan main  */
-    /* border-bottom: 1px solid #dbdbdb; */
-    max-width: 975px;                    /* membuat 3 line dengan 1 line + 1 line + 1 line */
-    width: 100%;                         /* membuat pembatas / limit widhth*/
-    margin: 0 auto;                      /* dengan margin 0 auto, posisi akan berada ditengah body */
-}
-
-/* tulisan instagram bagian kiri atas */
-.Instagram {
-    font-family: 'Grand Hotel';
-    font-size: 36px;
-}
-/* styling placeholder */
-::-webkit-input-placeholder{
-   text-align: center;
-   color: #8d8d8d;
-   font-weight: 100;
-}
-::-moz-placeholder{
-    text-align: center;
-    color: #8d8d8d;
-    font-weight: 100;   
-}
-
-/* styling search engine */
-.search {
-    border: solid 1px #dbdbdb;
-    background-color: #fafafa;
-    border-radius: 3px;
-    line-height: 30px;
-    width: 300px;
-}
-
-/* styling img pada class icon bagian kanan atas */
- .icon img {
-    width: 40px;
-    align-items: center
-}
-
 .profile {
     padding: 60px;
     padding-bottom: 0px;
@@ -129,126 +70,147 @@ button {
 }
 
 
-
-
-ul {
-    list-style: none;
-    padding: 0;
-    /*untuk menghilangkan jarak tab list*/
-    margin: 0;
-    /*untuk menghilangkan jarak tab list*/
-}
-
-li {
-    display: inline; 
-    margin-right: 25px;
-    font-size: 16px;
-
-}
-
-
 </style>
 <body>
     <header>
-        <!-- Header; menampilkan bagian atas (logo, search engine, icon) -->
-        
-            <div>
-                <ul style="padding-top: 15px">
-                    <li>
-                        <img src="https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-2-128.png" width="30px" style="position: absolute; padding:7px "> <span class="Instagram"> &nbsp;&emsp;&nbsp;| Instagram</span>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="container-fluid py-2">
+                <a href="dessert.html" class="navbar-brand">Restaurant</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a href="makanan.html" class="nav-link">Makanan</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="minuman.html" class="nav-link">Minuman</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="cemilan.html" class="nav-link">Cemilan</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="dessert.html" class="nav-link">Dessert</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="cake.html" class="nav-link">Cake</a>
+                      </li>
+                    </ul>
+                </div>
             </div>
-
-            <!-- search engine -->
-            <div>
-                <ul style="padding: 0px 80px 0px 80px">
-                    <li>
-                        <input type="text" class="search" style="font-family:'Segoe UI', FontAwesome;" placeholder="&#xF002; Search" >
-                    </li>
-                </ul>
-            </div>
-
-            <!-- 3 icon bagian kanan (discover, love, profile) -->
-            <div class="icon">
-                <ul style="padding-top: 15px;  padding-left: 30px">
-                    <li>
-                        <img src="https://cdn2.iconfinder.com/data/icons/instagram-ui/48/jee-73-128.png">
-                    </li>
-                    <li>
-                        <img src="https://cdn3.iconfinder.com/data/icons/other-icons/48/heart_love-128.png">
-                    </li>
-                    <li>
-                        <img src="https://cdn2.iconfinder.com/data/icons/instagram-ui/48/jee-74-128.png">
-                    </li>
-                </ul>
-            </div>
-            
-    </header>
+        </nav>
+      </header>
     <!-- END OF HEADER -->
     
     <!-- bagian biodata -->
     <main>
-        <hr>
         <!-- bagian biodata isinya photo profile, username dan info follow -->
         <div class="profile">
             <!-- grid pertama (1fr); photo profile -->
-            <img class="fotoProfile" src="assets/images/disert.jpg">
+            <img class="fotoProfile" src="assets/images/Choose some Aesthetic Foods and I'll give you a Kawaii Outfit_.png">
             
             <!-- grid ke dua (2fr); username dan biodata -->
             <div>
                 <!-- unordered list yang berisi list item; 1.username 2.button edit 3.setting icon -->
-                <ul>
-                    <li><span class="userName">Dessert_Cake</span>
-                    </li>
-
-                    <li><span style="position: absolute; padding: 7px"><button class="fontButton">Edit Profile</button>&emsp;<span style="position: absolute; padding-top: 1px" ><img src="https://cdn3.iconfinder.com/data/icons/fez/512/FEZ-04-128.png" width="28px"></span></span></li>
-                </ul>
+                <span class="userName">Dessert_Cake</span>
+                <span style="position: absolute; padding: 7px"><button class="fontButton">Edit Profile</button>&emsp;<span style="position: absolute; padding-top: 1px" ><img src="https://cdn3.iconfinder.com/data/icons/fez/512/FEZ-04-128.png" width="28px"></span></span>
                 
-                <!--  unordered list yang berisi list item; 1.jumlah post 2.followers 3.following -->
-                <ul>
-                    <li>
-                        <span  style="padding-right: 20px;"></span><b>2</b> posts</span></li>
-                    <li>
-                        <b>2M</b> Followers</li>
-                    <li>
-                        <b>1</b> Following</li>
-                </ul>
-
                 <!--  unordered list yang berisi list item; 1.nama 2.bio -->
-                <ul>
-                    <li>
-                        <b>Nad's Food📷</b>
-                    </li>
-                </ul>
+                    <br>
+                    <b>Nad's Food📷</b>
             </div>
 
         </div>
         <hr> <br>
         <div id="content">
             <div>
-                <img src="assets/images/disert.jpg">
+                <img src="assets/images/sarah on Twitter.jpg" class="picture">
                 <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 95</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 11</li>
-                    </ul>
                 </div>
             </div>
             <div>
-                <img src="assets/images/minuman.jpg" class="picture" alt="Golden Trio">
+                <img src="assets/images/Highway To Married -Jaeyong-✔️.jpg" class="picture" alt="dessert">
                 <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 133</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 12</li>
-                    </ul>
-    
                 </div>
             </div>
-            
+            <div>
+                <img src="assets/images/unduhan.jpg" class="picture">
+                <div class="gallery-item-info">
+                </div>
+            </div>
+        </div> <br>
+        <div id="content">
+            <div>
+                <img src="assets/images/Our Signature 9 Korean Styled Macarons.jpg" class="picture">
+                <div class="gallery-item-info">
+                </div>
+            </div>
+            <div>
+                <img src="assets/images/𝙈𝙖𝙧𝙮𝙧𝙤𝙨𝙚 on Twitter.jpg" class="picture" alt="dessert">
+                <div class="gallery-item-info">
+                </div>
+            </div>
+            <div>
+                <img src="assets/images/𝐒 𝐄 𝐋 𝐈 𝐍 𝐀.jpg" class="picture">
+                <div class="gallery-item-info">
+                </div>
+            </div>
         </div>
 
-    <!-- </main> -->
+    </main>
+<!-- footer -->
+<footer class="text-white text-center text-lg-start bg-danger mt-5">
+    <!-- Grid container -->
+    <div class="container-fluid p-4">
+      <!--Grid row-->
+      <div class="row mt-4">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-white mb-4">About</h5>
+            <ul class="fa-ul" style="margin-left: 1.65em;">
+            <li>Nama : Nada Nazmi Nurlaila</li>
+            <li>Kelas : XII RPL 2</li>
+            <li>GitHub : NadaaaNazmi</li>
+            </ul>
+            </div>
+  <!--Grid column-->
+  <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+  
+  </div>
+  <!-- Grid Column -->
+  
+  <!--Grid column-->
+  <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+  <h5 class="text-white mb-4">Contact</h5>
+  <ul class="fa-ul" style="margin-left: 1.65em;">
+  <li class="mb-3">
+  <span class="fa-li"><i class="fas fa-mobile"></i></span><span class="ms-2">Kampung Tengah, Disert Cake</span>
+  </li>
+  <li class="mb-3">
+  <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">0812 3456 7890</span>
+  </li>
+  <li class="mb-3">
+  <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Nad's Food</span>
+  </li>
+  <li class="mb-3">
+  <span class="fa-li"><i class="fas fa-globe"></i></span><span class="ms-2">12 345 67</span>
+  </li>
+  </ul>
+  </div>
+  
+  <!-- Grid Column -->
+  
+  <!-- Copyright -->
+  <div class="text-center p-3">
+    © Copyright:
+    <a class="text-white" href="">RPL2.2022</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- footer -->
+    
 <script src="assets/js/bootstrap.min.js"></script>
 </body>
 
